@@ -9,7 +9,7 @@ public class DIXMLSpringHelloWorld {
     XmlBeanFactory bf =
       new XmlBeanFactory(
         new FileSystemResource(
-          new File("di/hello.xml")));
+          new File("src/hello.xml")));
 
     MessageService service = (MessageService) bf.getBean("service");
     service.execute();
